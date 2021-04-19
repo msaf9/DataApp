@@ -5,11 +5,17 @@ import pandas as pd
 st.write("""
 # Stock Price Streamlit Application
 
-Apple's stock and volume over the time
+Stock and volume over the time
 
 """)
 
-stockSymbol = 'AAPL'
+stock = st.selectbox(
+'Which stock you would like to select?',
+('AAPL', 'AMZN', 'GOOGL'))
+
+st.write('You selected:', stock)
+
+stockSymbol = stock
 stockData = yf.Ticker(stockSymbol)
 stockDf = stockData.history(period='1d', start='2011-10-10', end='2021-01-31')
 st.line_chart(stockDf.Close)
