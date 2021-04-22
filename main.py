@@ -24,8 +24,12 @@ stock_name = df.loc[df['symbol'] == stock, 'name'].iloc[0]
 # name = stock_name.head(None)
 st.write('You selected:', stock_name)
 
-From = st.date_input("From", value=None, min_value=None, max_value=None, key=None)
-To = st.date_input("To", value=None, min_value=None, max_value=None, key=None)
+col1, col2 = st.beta_columns(2)
+with col1:
+    From = st.date_input("From", value=None, min_value=None, max_value=None, key=None)
+with col2:
+    To = st.date_input("To", value=None, min_value=None, max_value=None, key=None)
+
 stockSymbol = stock
 stockData = yf.Ticker(stockSymbol)
 stockDf = stockData.history(period='1d', start=From, end=To)
