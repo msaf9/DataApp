@@ -13,14 +13,16 @@ Stock and volume over the time
 pd.set_option("display.max_rows", None, "display.max_columns", None)
 df = pd.read_csv('symbols.csv')
 df1 = df[['symbol']]
-result = df1.head(99)
+result = df1.head(None)
 print(result)
 
 stock = st.selectbox(
 'Which stock you would like to select?',
-('AAPL', 'AMZN', 'GOOGL'))
+(result))
 
-st.write('You selected:', stock)
+stock_name = df.loc[df['symbol'] == stock, 'name'].iloc[0]
+# name = stock_name.head(None)
+st.write('You selected:', stock_name)
 
 stockSymbol = stock
 stockData = yf.Ticker(stockSymbol)
