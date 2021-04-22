@@ -24,9 +24,11 @@ stock_name = df.loc[df['symbol'] == stock, 'name'].iloc[0]
 # name = stock_name.head(None)
 st.write('You selected:', stock_name)
 
+From = st.date_input("From", value=None, min_value=None, max_value=None, key=None)
+To = st.date_input("To", value=None, min_value=None, max_value=None, key=None)
 stockSymbol = stock
 stockData = yf.Ticker(stockSymbol)
-stockDf = stockData.history(period='1d', start='2011-10-10', end='2021-01-31')
+stockDf = stockData.history(period='1d', start=From, end=To)
 st.line_chart(stockDf.Close)
 st.line_chart(stockDf.Volume)
 
