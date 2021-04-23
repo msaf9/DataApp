@@ -1,6 +1,6 @@
 import streamlit as st
 from get_all_tickers import get_tickers as gt
-from get_all_tickers.get_tickers import Region
+# from get_all_tickers.get_tickers import Region
 import yfinance as yf
 import pandas as pd
 
@@ -14,7 +14,7 @@ pd.set_option("display.max_rows", None, "display.max_columns", None)
 df = pd.read_csv('symbols.csv')
 df1 = df[['symbol']]
 result = df1.head(None)
-print(result)
+# print(result)
 
 stock = st.selectbox(
 'Which stock you would like to select?',
