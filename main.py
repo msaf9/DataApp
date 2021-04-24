@@ -5,9 +5,15 @@ import yfinance as yf
 import pandas as pd
 st.set_page_config(page_title='Stock Data App', page_icon="📈", layout='centered', initial_sidebar_state='auto')
 
+hide_streamlit_style = """
+            <style>
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.write("""
-# Stock Price Streamlit Application
+# Stock Data Application
 
 Stock and volume over the time
 
@@ -24,7 +30,7 @@ stock = st.selectbox(
 
 stock_name = df.loc[df['symbol'] == stock, 'name'].iloc[0]
 # name = stock_name.head(None)
-st.write('You selected:', stock_name)
+st.write('You have selected:', stock_name)
 
 col1, col2 = st.beta_columns(2)
 with col1:
