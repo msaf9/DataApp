@@ -1,7 +1,7 @@
 # Stock Data App
 
 ## About
-Stock Data App helps to visualize the [8855 ticker's](tickers.csv, 'Tickers') (stock) Close and Volume from a given date to date.
+Stock Data App helps to visualize the [8855 ticker's](tickers.csv 'Tickers') (stock) Close and Volume from a given date to date.
 
 ## Usage
 
@@ -28,5 +28,5 @@ Deployed on Heroku.
 
 ### Stock Data App's URL 
 
-> [Stock Data App](https://stock-data-app-streamlit.herokuapp.com/, 'Stock Data App')
+> [Stock Data App](https://stock-data-app-streamlit.herokuapp.com/ 'Stock Data App')
 
