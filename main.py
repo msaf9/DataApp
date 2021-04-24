@@ -22,6 +22,7 @@ pd.set_option("display.max_rows", None, "display.max_columns", None)
 df = pd.read_csv('symbols.csv')
 df1 = df[['symbol']]
 result = df1.head(None)
+# result.to_csv('tickers.csv') 
 # print(result)
 
 stock = st.selectbox(
