@@ -3,6 +3,8 @@ from get_all_tickers import get_tickers as gt
 # from get_all_tickers.get_tickers import Region
 import yfinance as yf
 import pandas as pd
+st.set_page_config(page_title='Stock Data App', page_icon="📈", layout='centered', initial_sidebar_state='auto')
+
 
 st.write("""
 # Stock Price Streamlit Application
