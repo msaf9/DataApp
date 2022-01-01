@@ -33,7 +33,7 @@ stock_name = df.loc[df['symbol'] == stock, 'name'].iloc[0]
 # name = stock_name.head(None)
 st.write('You have selected:', stock_name)
 
-col1, col2 = st.beta_columns(2)
+col1, col2 = st.columns(2)
 with col1:
     From = st.date_input("From", value=None, min_value=None, max_value=None, key=None)
 with col2:
