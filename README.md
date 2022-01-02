@@ -27,12 +27,12 @@ Deployed on Heroku.
 
 ## Technologies
 - Python
-- Git
-- Heroku
 - streamlit
 - pandas
 - yfinance
 - get-all-tickers
+- Git
+- Heroku
 
 ## Project status
 > **Completed**
