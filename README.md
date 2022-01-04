@@ -37,6 +37,11 @@ Deployed on Heroku.
 ## Project status
 > **Completed**
 
+### Versions
+1.0.0 (**Beta**)
+
+1.0.1 (**Current**)
+
 ## Installation
 ### Get repository
 ```git
