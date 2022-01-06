@@ -59,3 +59,4 @@ streamlit run main.py
 ```
 
 ## License
+[MIT License](LICENSE)
