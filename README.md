@@ -39,6 +39,7 @@ Deployed on Heroku.
 
 ### Versions
 1.0.0 (**Beta**)
+- First version.
 
 1.0.1 (**Current**)
 - Updated libraries to fix [JSONDecodeError](https://discuss.streamlit.io/t/json-decoder-jsondecodeerror/14830).
