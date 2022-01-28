@@ -27,15 +27,22 @@ Deployed on Heroku.
 
 ## Technologies
 - Python
-- Git
-- Heroku
 - streamlit
 - pandas
 - yfinance
 - get-all-tickers
+- Git
+- Heroku
 
 ## Project status
 > **Completed**
+
+### Versions
+1.0.0 (**Beta**)
+- First version.
+
+1.0.1 (**Current**)
+- Updated libraries to fix [JSONDecodeError](https://discuss.streamlit.io/t/json-decoder-jsondecodeerror/14830).
 
 ## Installation
 ### Get repository
@@ -53,3 +60,4 @@ streamlit run main.py
 ```
 
 ## License
+[MIT License](LICENSE)
