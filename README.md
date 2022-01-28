@@ -41,8 +41,11 @@ Deployed on Heroku.
 1.0.0 (**Beta**)
 - First version.
 
-1.0.1 (**Current**)
+1.0.1 (**Live**)
 - Updated libraries to fix [JSONDecodeError](https://discuss.streamlit.io/t/json-decoder-jsondecodeerror/14830).
+
+1.1.0 (**Current stable version**)
+- Default FROM value feature added.
 
 ## Installation
 ### Get repository
