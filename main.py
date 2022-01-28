@@ -1,3 +1,4 @@
+import datetime
 import streamlit as st
 from get_all_tickers import get_tickers as gt
 # from get_all_tickers.get_tickers import Region
@@ -35,7 +36,7 @@ st.write('You have selected:', stock_name)
 
 col1, col2 = st.columns(2)
 with col1:
-    From = st.date_input("From", value=None, min_value=None, max_value=None, key=None)
+    From = st.date_input("From", datetime.date(2020, 1, 1), min_value=None, max_value=None, key=None)
 with col2:
     To = st.date_input("To", value=None, min_value=None, max_value=None, key=None)
 
