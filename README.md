@@ -1,4 +1,4 @@
-# Stock Data App
+# Market Summary
 Design and development of Stock Data application using object-oriented programming language and libraries.
 
 ## Table of contents
