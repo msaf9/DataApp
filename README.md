@@ -9,7 +9,7 @@ Design and development of Stock Data application using object-oriented programmi
 5. License
 
 ## Introduction
-Stock Data App helps to visualize the [8855 ticker's](tickers.csv 'Tickers') (stock) Close and Volume from a given date to date.
+Market Summary App helps to visualize the [8855 ticker's](tickers.csv 'Tickers') (stock) Close and Volume from a given date to date.
 
 ### Usage
 ```
