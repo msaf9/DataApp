@@ -4,7 +4,7 @@ from get_all_tickers import get_tickers as gt
 # from get_all_tickers.get_tickers import Region
 import yfinance as yf
 import pandas as pd
-st.set_page_config(page_title='Stock Data App', page_icon="📈", layout='centered', initial_sidebar_state='auto')
+st.set_page_config(page_title='Market Summary App', page_icon="📈", layout='centered', initial_sidebar_state='auto')
 
 hide_streamlit_style = """
             <style>
@@ -14,7 +14,7 @@ hide_streamlit_style = """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.write("""
-# Stock Data Application
+# Market Summary Application
 
 Stock and volume over the time
 
