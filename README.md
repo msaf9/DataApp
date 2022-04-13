@@ -1,5 +1,5 @@
 # Market Summary
-Design and development of Stock Data application using object-oriented programming language and libraries.
+Design and development of Market Summary application using object-oriented programming language and libraries.
 
 ## Table of contents
 1. Introduction
@@ -23,14 +23,15 @@ How to use the App?
 Deployed on Heroku.
 
 ### Stock Data App's URL 
-> [Stock Data App](https://stock-data-app-streamlit.herokuapp.com/ 'Stock Data App')
+> [Market Summary App](https://market-summary-app.herokuapp.com/ 'Market Summary App')
 
 ## Technologies
 - Python
-- streamlit
-- pandas
-- yfinance
-- get-all-tickers
+- Libraries
+  - streamlit
+  - pandas
+  - yfinance
+  - get-all-tickers
 - Git
 - Heroku
 
@@ -44,14 +45,17 @@ Deployed on Heroku.
 1.0.1 (**Live**)
 - Updated libraries to fix [JSONDecodeError](https://discuss.streamlit.io/t/json-decoder-jsondecodeerror/14830).
 
-1.1.0 (**Current stable version**)
+1.1.0 (**From label added**)
 - Default FROM value feature added.
+
+1.1.1 (**Current stable version**)
+- Modified headers and titles.
 
 ## Installation
 ### Get repository
 ```git
-git clone https://github.com/msaf9/DataApp.git
-cd DataApp
+git clone https://github.com/msaf9/MarketSummary.git
+cd MarketSummary
 ```
 
 ### Compile and run
