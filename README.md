@@ -1,12 +1,19 @@
 # Market Summary
 Design and development of Market Summary application using object-oriented programming language and libraries.
 
-## Table of contents
-1. Introduction
-2. Technologies
-3. Project status
-4. Installation
-5. License
+- [Market Summary](#market-summary)
+  - [Introduction](#introduction)
+    - [Usage](#usage)
+    - [Deployment details](#deployment-details)
+    - [Stock Data App's URL](#stock-data-apps-url)
+  - [Technologies](#technologies)
+  - [Project status](#project-status)
+    - [Versions](#versions)
+  - [Installation](#installation)
+    - [Get repository](#get-repository)
+    - [Compile and run](#compile-and-run)
+      - [Using Conda env](#using-conda-env)
+  - [License](#license)
 
 ## Introduction
 Market Summary App helps to visualize the [8855 ticker's](tickers.csv 'Tickers') (stock) Close and Volume from a given date to date.
