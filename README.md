@@ -61,8 +61,8 @@ Deployed on Heroku.
 ## Installation
 ### Get repository
 ```git
-git clone https://github.com/msaf9/MarketSummary.git
-cd MarketSummary
+git clone https://github.com/msaf9/market-summary.git
+cd market-summary
 ```
 
 ### Compile and run
