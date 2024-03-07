@@ -1,19 +1,20 @@
-# Market Summary
+<h1>Market Summary</h1>
 Design and development of Market Summary application using object-oriented programming language and libraries.
 
-- [Market Summary](#market-summary)
-  - [Introduction](#introduction)
-    - [Usage](#usage)
-    - [Deployment details](#deployment-details)
-    - [Stock Data App's URL](#stock-data-apps-url)
-  - [Technologies](#technologies)
-  - [Project status](#project-status)
-    - [Versions](#versions)
-  - [Installation](#installation)
-    - [Get repository](#get-repository)
-    - [Compile and run](#compile-and-run)
-      - [Using Conda env](#using-conda-env)
-  - [License](#license)
+<h2>Table of contents</h2>
+
+- [Introduction](#introduction)
+  - [Usage](#usage)
+  - [Deployment details](#deployment-details)
+  - [Stock Data App's URL](#stock-data-apps-url)
+- [Technology Stack](#technology-stack)
+- [Project status](#project-status)
+  - [Versions](#versions)
+- [Installation](#installation)
+  - [Get repository](#get-repository)
+  - [Compile and run](#compile-and-run)
+    - [Using Conda env](#using-conda-env)
+- [License](#license)
 
 ## Introduction
 Market Summary App helps to visualize the [8855 ticker's](tickers.csv 'Tickers') (stock) Close and Volume from a given date to date.
@@ -32,7 +33,7 @@ Deployed on Heroku.
 ### Stock Data App's URL 
 > [Market Summary App](https://market-summary-app.herokuapp.com/ 'Market Summary App')
 
-## Technologies
+## Technology Stack
 - Python
 - Libraries
   - streamlit
