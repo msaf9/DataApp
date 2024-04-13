@@ -40,13 +40,13 @@ with col1:
 with col2:
     To = st.date_input("To", datetime.date.today(), min_value=None, max_value=None, key=None)
 
-# Convert From and To dates to UTC timestamps
-from_timestamp = datetime.datetime.combine(From, datetime.datetime.min.time()).timestamp()
-to_timestamp = datetime.datetime.combine(To, datetime.datetime.min.time()).timestamp()
+# Convert From and To dates to datetime objects
+start = datetime.datetime.combine(From, datetime.datetime.min.time())
+end = datetime.datetime.combine(To, datetime.datetime.min.time())
 
 stockSymbol = stock
 stockData = yf.Ticker(stockSymbol)
-stockDf = stockData.history(period='1d', start=from_timestamp, end=to_timestamp)
+stockDf = stockData.history(period='1d', start=start, end=end)
 st.line_chart(stockDf.Close)
 st.line_chart(stockDf.Volume)
 
