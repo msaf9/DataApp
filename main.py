@@ -48,6 +48,10 @@ end = datetime.datetime.combine(To, datetime.datetime.min.time()).replace(tzinfo
 stockSymbol = stock
 stockData = yf.Ticker(stockSymbol)
 stockDf = stockData.history(period='1d', start=start, end=end)
+
+# Convert index to UTC timezone
+stockDf.index = stockDf.index.tz_localize(None).tz_localize('UTC')
+
 st.line_chart(stockDf.Close)
 st.line_chart(stockDf.Volume)
 
