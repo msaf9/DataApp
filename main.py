@@ -1,4 +1,5 @@
 import datetime
+import pytz
 import streamlit as st
 from get_all_tickers import get_tickers as gt
 # from get_all_tickers.get_tickers import Region
@@ -39,10 +40,10 @@ with col1:
     From = st.date_input("From", datetime.date(2020, 1, 1), min_value=None, max_value=None, key=None)
 with col2:
     To = st.date_input("To", datetime.date.today(), min_value=None, max_value=None, key=None)
-
-# Convert From and To dates to datetime objects
-start = datetime.datetime.combine(From, datetime.datetime.min.time())
-end = datetime.datetime.combine(To, datetime.datetime.min.time())
+    
+# Convert From and To dates to datetime objects with UTC timezone
+start = datetime.datetime.combine(From, datetime.datetime.min.time()).replace(tzinfo=pytz.UTC)
+end = datetime.datetime.combine(To, datetime.datetime.min.time()).replace(tzinfo=pytz.UTC)
 
 stockSymbol = stock
 stockData = yf.Ticker(stockSymbol)
